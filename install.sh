@@ -14,3 +14,8 @@ cd ~/catkin_ws/src
 git clone https://github.com/Maelic/pepper_naoqi_ros.git
 cd ./pepper_naoqi_ros/ && rosdep install -i -y --from-paths ./naoqi_driver
 cd ~/catkin_ws && catkin_make
+
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+sh ./script.sh
